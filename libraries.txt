@@ -1,0 +1,2 @@
+PubSubClient
+Adafruit BMP085 Library
