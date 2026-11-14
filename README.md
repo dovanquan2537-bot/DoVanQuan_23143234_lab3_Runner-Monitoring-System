@@ -37,7 +37,8 @@ Dự án xây dựng hệ thống giám sát và cảnh báo người chạy s�
 - alertQueue: truyền dữ liệu cảnh báo.
 
 ## 6. Sơ đồ mô phỏng
-Dự án được thiết kế và mô phỏng trên Wokwi.
+- LinK Wokwi: https://wokwi.com/projects/477953395558713345
+- Truy cập Web mô phỏng: 
 
 ## 7. Tác giả
 - Sinh viên: Đỗ Văn Quân
