@@ -38,7 +38,7 @@ Dự án xây dựng hệ thống giám sát và cảnh báo người chạy s�
 
 ## 6. Sơ đồ mô phỏng
 - LinK Wokwi: https://wokwi.com/projects/477953395558713345
-- Truy cập Web mô phỏng: 
+- Truy cập Web mô phỏng: https://dovanquan2537-bot.github.io/DoVanQuan_23143234_lab3_Runner-Monitoring-System/
 
 ## 7. Tác giả
 - Sinh viên: Đỗ Văn Quân
