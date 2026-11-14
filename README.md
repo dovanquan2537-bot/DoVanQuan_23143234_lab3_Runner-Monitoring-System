@@ -29,12 +29,15 @@ Dự án xây dựng hệ thống giám sát và cảnh báo người chạy s�
 - HTML, CSS, JavaScript
 - Wokwi Simulator
 
-## 5. Phân chia nhiệm vụ FreeRTOS
-- Task truyền data: Core 0.
-- Task đọc data: Core 1.
-- Task cảnh báo: Core 1.
-- dataQueue: truyền dữ liệu cảm biến.
-- alertQueue: truyền dữ liệu cảnh báo.
+## 5.Xây dụng cấu trúc FreeRTOS
++ “Task truyền data”: kết nối Wifi chạy Core 0, nếu thành công, đọc dữ liệu từ 
+hàng đợi “data Queue”, và gửi lên MQTT broker.   
++ “Task đọc data”, chạy Core 1: đọc dữ liệu cảm biến BMP180, hiển thị dữ liệu 
+qua giao tiếp serial, gửi dữ liệu đầy đủ vào hàng đợi “data Queue” và dữ liệu 
+cảnh báo gồm nhiệt độ + độ cao vào hàng đợi “data Alert”   
++ “Tast cảnh báo”, chạy Core 1: đọc dữ liệu tử hàng đợi “data Alert” , và thực 
+hiện Cảnh báo bằng Còi/Đèn khi nhiệt độ người chạy (runner) quá ngưỡng hoặc 
+dưới ngưỡng & Cảnh báo khi có sự thay đổi độ cao đột ngột. 
 
 ## 6. Sơ đồ mô phỏng
 - LinK Wokwi: https://wokwi.com/projects/477953395558713345
